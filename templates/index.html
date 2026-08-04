@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Card</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="card-container">
+            <!-- Header -->
+            <div class="card-header">
+                <div class="header-left">
+                    <div class="icon-box">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="header-text">
+                        <h2>Add New Card</h2>
+                        <p>Enter your card details securely</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="secure-badge">
+                        <i class="fas fa-lock"></i> Secure &amp; Encrypted
+                    </div>
+                    <div class="card-logos">
+                        <span class="logo visa">VISA</span>
+                        <span class="logo mastercard">MC</span>
+                        <span class="logo rupay">RuPay</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form action="/submit" method="POST">
+                <!-- Card Number -->
+                <div class="input-group full-width">
+                    <label>Card Number</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-credit-card input-icon"></i>
+                        <input type="text" name="card_number" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                </div>
+
+                <!-- Row: Cardholder Name + Expiry -->
+                <div class="row">
+                    <div class="col">
+                        <label>Cardholder Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" name="name" placeholder="Enter name on card" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Expiry Date</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar-alt input-icon"></i>
+                            <input type="text" name="expiry_date" placeholder="MM / YY" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row: CVV + Billing Address -->
+                <div class="row">
+                    <div class="col">
+                        <label>CVV / CVC</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="text" name="cvv" placeholder="123" required>
+                            <i class="fas fa-question-circle help-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Billing Address (Optional)</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-map-marker-alt input-icon"></i>
+                            <input type="text" name="address" placeholder="Enter billing address">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-save">
+                    <i class="fas fa-lock"></i> Save Card
+                </button>
+            </form>
+
+            <!-- Footer -->
+            <div class="card-footer">
+                <i class="fas fa-shield-alt"></i>
+                Your card information is safe and secure with us.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
