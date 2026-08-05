@@ -72,17 +72,18 @@
 ---
 
 ## 📁 **Project Structure**
-📦 card_phishing
-┣ 📂 data
+📦 card_phishing/
+┣ 📂 data/
 ┃ ┗ 📄 stolen_cards.json # Captured card data
-┣ 📂 static
+┣ 📂 static/
 ┃ ┗ 🎨 style.css # Premium CSS
-┣ 📂 templates
+┣ 📂 templates/
 ┃ ┗ 📄 index.html # Realistic payment UI
 ┣ 📄 server.py # Main Flask server
 ┣ 📄 monitor.py # Live monitoring script
 ┣ 📄 requirements.txt # Python dependencies
 ┗ 📄 README.md # Project documentation
+
 
 ---
 
@@ -94,3 +95,5 @@ graph TD
     D --> E[Data Saved to JSON]
     E --> F[Monitor Alerts in Real-Time]
     F --> G[User Redirected to Real Bank Site]
+
+
