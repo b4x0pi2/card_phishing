@@ -71,18 +71,18 @@
 
 ---
 
-## 📁 **Project Structure**
-📦 card_phishing/
-┣ 📂 data/
-┃ ┗ 📄 stolen_cards.json # Captured card data
-┣ 📂 static/
-┃ ┗ 🎨 style.css # Premium CSS
-┣ 📂 templates/
-┃ ┗ 📄 index.html # Realistic payment UI
-┣ 📄 server.py # Main Flask server
-┣ 📄 monitor.py # Live monitoring script
-┣ 📄 requirements.txt # Python dependencies
-┗ 📄 README.md # Project documentation
+## 📁 Project Structure
+card_phishing/
+├── data/
+│   └── stolen_cards.json
+├── static/
+│   └── style.css
+├── templates/
+│   └── index.html
+├── server.py
+├── monitor.py
+├── requirements.txt
+└── README.md
 
 
 ---
